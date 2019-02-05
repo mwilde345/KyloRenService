@@ -52,5 +52,4 @@ https://stackoverflow.com/questions/41273152/any-way-i-can-get-python-sounds-to-
 
 ## Setup
 download raspbian. flash an SD using balenaEtcher (just follow raspbian guide......)
-
-
+mvpdev is password for pi
