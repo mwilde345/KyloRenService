@@ -25,8 +25,14 @@ kylo ren does stuff
 * IoT listener script should run always
 * Stream listener should run always
 * Sound and Light scripts together or separate, python or js?
+* put pi on timed outlet, force pull dynamo configs on startup
 * any way to deploy pi code automatically?
 https://dzone.com/articles/github-continuous-deployment-to-a-raspberry-pi
+
+https://www.reddit.com/r/aws/comments/9dczf4/aws_codedeploy_on_raspberry_pi/
+
+https://aws.amazon.com/blogs/mt/manage-raspberry-pi-devices-using-aws-systems-manager/
+systems manager can pull code from s3?
 
 ## Pieces
 (all in cloudformation, get a boilerplate)
