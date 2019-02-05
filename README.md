@@ -25,6 +25,8 @@ kylo ren does stuff
 * IoT listener script should run always
 * Stream listener should run always
 * Sound and Light scripts together or separate, python or js?
+* any way to deploy pi code automatically?
+https://dzone.com/articles/github-continuous-deployment-to-a-raspberry-pi
 
 ## Pieces
 (all in cloudformation, get a boilerplate)
