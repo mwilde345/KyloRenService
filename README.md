@@ -50,3 +50,7 @@ https://raspberrypi.stackexchange.com/questions/7088/playing-audio-files-with-py
 pygame overlap audio
 https://stackoverflow.com/questions/41273152/any-way-i-can-get-python-sounds-to-overlap
 
+## Setup
+download raspbian. flash an SD using balenaEtcher (just follow raspbian guide......)
+
+
