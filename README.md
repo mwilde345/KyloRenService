@@ -51,8 +51,10 @@ pygame overlap audio
 https://stackoverflow.com/questions/41273152/any-way-i-can-get-python-sounds-to-overlap
 
 ## Setup
-download raspbian. flash an SD using balenaEtcher (just follow raspbian guide......)
-mvpdev is password for pi
-/boot/config.txt >> display_rotate=1 (90 deg rotate)
-sudo service lightdm restart (reboot just the gui)
-ctrl+alt+f1 to term, ctrl+alt+f7 back to gui
+* download raspbian. flash an SD using balenaEtcher (just follow raspbian guide......)
+* mvpdev is password for pi
+* /boot/config.txt >> display_rotate=1 (90 deg rotate)
+* sudo service lightdm restart (reboot just the gui)
+* ctrl+alt+f1 to term, ctrl+alt+f7 back to gui
+* https://raspberrypi.stackexchange.com/questions/12869/how-to-solve-encountered-a-section-with-no-package-header-error
+
