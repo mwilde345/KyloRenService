@@ -58,3 +58,5 @@ https://stackoverflow.com/questions/41273152/any-way-i-can-get-python-sounds-to-
 * ctrl+alt+f1 to term, ctrl+alt+f7 back to gui
 * https://raspberrypi.stackexchange.com/questions/12869/how-to-solve-encountered-a-section-with-no-package-header-error
 * https://github.com/beyondscreen/node-rpi-ws281x-native
+* neopixels on pi: https://learn.adafruit.com/neopixels-on-raspberry-pi
+* need 74AHCT125 or 74HCT125N converters and mini breadboard
