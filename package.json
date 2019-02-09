@@ -1,0 +1,23 @@
+{
+  "name": "KyloRenService",
+  "version": "0.0.0",
+  "description": "kylo ren does stuff ## Web Part * view all sound/light configs * upload audio clip (length limit?) * youtube clipper? * color picker * color/animation presets * play saber start/stop * play saber hum * password * save configs to dynamo * record voice (apply voice change?) * voice change for any clip",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwilde345/KyloRenService.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mwilde345/KyloRenService/issues"
+  },
+  "homepage": "https://github.com/mwilde345/KyloRenService#readme",
+  "dependencies": {
+    "rpi-ws281x-native": "^0.9.0"
+  },
+  "devDependencies": {}
+}

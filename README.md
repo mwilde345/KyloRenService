@@ -61,3 +61,4 @@ https://stackoverflow.com/questions/41273152/any-way-i-can-get-python-sounds-to-
 * neopixels on pi: https://learn.adafruit.com/neopixels-on-raspberry-pi
 * need 74AHCT125 or 74HCT125N converters and mini breadboard
 * wiring with the level shifting chip: https://learn.adafruit.com/neopixels-on-raspberry-pi/raspberry-pi-wiring
+* got afp on pi. now on mac do open afp:raspberrypi.local to mount remote fs
