@@ -27,12 +27,7 @@ kylo ren does stuff
 * Sound and Light scripts together or separate, python or js?
 * put pi on timed outlet, force pull dynamo configs on startup
 * any way to deploy pi code automatically?
-https://dzone.com/articles/github-continuous-deployment-to-a-raspberry-pi
-
-https://www.reddit.com/r/aws/comments/9dczf4/aws_codedeploy_on_raspberry_pi/
-
-https://aws.amazon.com/blogs/mt/manage-raspberry-pi-devices-using-aws-systems-manager/
-systems manager can pull code from s3?
+* manage pi volume via web slider.
 
 ## Pieces
 (all in cloudformation, get a boilerplate)
@@ -62,3 +57,5 @@ https://stackoverflow.com/questions/41273152/any-way-i-can-get-python-sounds-to-
 * need 74AHCT125 or 74HCT125N converters and mini breadboard
 * wiring with the level shifting chip: https://learn.adafruit.com/neopixels-on-raspberry-pi/raspberry-pi-wiring
 * got afp on pi. now on mac do open afp:raspberrypi.local to mount remote fs
+
+show chris @vetco the project. via our email thread.
