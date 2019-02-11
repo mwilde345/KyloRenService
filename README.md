@@ -59,3 +59,5 @@ https://stackoverflow.com/questions/41273152/any-way-i-can-get-python-sounds-to-
 * got afp on pi. now on mac do open afp:raspberrypi.local to mount remote fs
 
 show chris @vetco the project. via our email thread.
+
+TESTING CODEPIPELINE RUNCOMMAND TRIGGER
