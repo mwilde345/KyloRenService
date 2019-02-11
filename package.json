@@ -31,7 +31,6 @@
   "bugs": {
     "url": "https://github.com/mwilde345/KyloRenService/issues"
   },
-  "homepage": "https://github.com/mwilde345/KyloRenService#readme",
   "browserslist": [
     ">0.2%",
     "not dead",
