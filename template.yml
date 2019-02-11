@@ -20,6 +20,7 @@ Parameters:
     Description: "Github personal access token"
 Resources:
   # from the other package
+
   DeployBucket:
     Type: 'AWS::S3::Bucket'
     Properties:
