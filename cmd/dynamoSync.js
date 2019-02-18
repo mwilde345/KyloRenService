@@ -1,6 +1,5 @@
 // consider having the command run to git commit the changes to the local file every time a dynamo update is made.
 // like a backup in the repo.
-var program = require('commander');
 var AWS = require('aws-sdk');
 var unmarshal = require('dynamodb-marshaler').unmarshal;
 var Papa = require('papaparse');
