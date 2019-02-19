@@ -8,9 +8,8 @@ var headers = [];
 var unMarshalledArray = [];
 const fs = require('fs');
   
-var newCreds = AWS.config.credentials;
-newCreds.profile = 'mwilde_ro';
-AWS.config.update({credentials: newCreds});
+var credentials = new AWS.SharedIniFileCredentials({profile: 'mwilde_ro'});
+AWS.config.credentials = credentials;
   
 var dynamoDB = new AWS.DynamoDB();
   
