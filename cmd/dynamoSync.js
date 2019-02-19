@@ -7,10 +7,7 @@ var headers = [];
 var unMarshalledArray = [];
 const fs = require('fs');
   
-//var credentials = new AWS.SharedIniFileCredentials({profile: 'mwilde_ro'});
-AWS.config.accessKeyId = 'AKIAJUHOTXE56VDXXQQQ';
-AWS.config.secretAccessKey = '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';
-AWS.config.region = 'us-east-2';
+AWS.config.loadFromPath('./creds.json');
   
 var dynamoDB = new AWS.DynamoDB();
   
