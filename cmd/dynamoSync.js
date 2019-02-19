@@ -1,15 +1,16 @@
 // consider having the command run to git commit the changes to the local file every time a dynamo update is made.
 // like a backup in the repo.
 var AWS = require('aws-sdk');
-AWS.config.update({region: 'us-east-2'});
 var unmarshal = require('dynamodb-marshaler').unmarshal;
 var Papa = require('papaparse');
 var headers = [];
 var unMarshalledArray = [];
 const fs = require('fs');
   
-var credentials = new AWS.SharedIniFileCredentials({profile: 'mwilde_ro'});
-AWS.config.credentials = credentials;
+//var credentials = new AWS.SharedIniFileCredentials({profile: 'mwilde_ro'});
+AWS.config.accessKeyId = 'AKIAJUHOTXE56VDXXQQQ';
+AWS.config.secretAccessKey = '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';
+AWS.config.region = 'us-east-2';
   
 var dynamoDB = new AWS.DynamoDB();
   
