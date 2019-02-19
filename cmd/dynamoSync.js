@@ -2,12 +2,13 @@
 // like a backup in the repo.
 var AWS = require('aws-sdk');
 var unmarshal = require('dynamodb-marshaler').unmarshal;
+var path = require('path');
 var Papa = require('papaparse');
 var headers = [];
 var unMarshalledArray = [];
 const fs = require('fs');
-  
-AWS.config.loadFromPath('./creds.json');
+AWS.config.credentials = new AWS.SharedIniFileCredentials({profile: 'mwilde_ro'});
+AWS.config.region = 'us-east-2';
   
 var dynamoDB = new AWS.DynamoDB();
   
@@ -17,9 +18,7 @@ var query = {
 };
 
 var scanDynamoDB = function ( query ) {
-
     dynamoDB.scan( query, function ( err, data ) {
-  
       if ( !err ) {
         unMarshalIntoArray( data.Items ); // Print out the subset of results.
         if ( data.LastEvaluatedKey ) { // Result is incomplete; there is more to come.
@@ -27,10 +26,9 @@ var scanDynamoDB = function ( query ) {
           scanDynamoDB(query);
         }
         else {
-          //console.log(Papa.unparse( { fields: [ ...headers ], data: unMarshalledArray } ));
           fs.writeFileSync(
-            `../data/dynamoData.csv`,
-            Papa.unparse( { fields: [ ...headers ], unMarshalledArray} ),
+            '../data/dynamoData.csv',
+            Papa.unparse( { fields: [ ...headers ], data: unMarshalledArray } ),
             'utf8');
         }
       }
