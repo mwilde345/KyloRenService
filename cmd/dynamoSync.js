@@ -7,13 +7,10 @@ var Papa = require('papaparse');
 var headers = [];
 var unMarshalledArray = [];
 const fs = require('fs');
-
   
-//   if (program.profile) {
-//     var newCreds = AWS.config.credentials;
-//     newCreds.profile = program.profile;
-//     AWS.config.update({credentials: newCreds});
-//   }
+var newCreds = AWS.config.credentials;
+newCreds.profile = 'mwilde_ro';
+AWS.config.update({credentials: newCreds});
   
 var dynamoDB = new AWS.DynamoDB();
   
@@ -34,6 +31,10 @@ var scanDynamoDB = function ( query ) {
         }
         else {
           //console.log(Papa.unparse( { fields: [ ...headers ], data: unMarshalledArray } ));
+          fs.writeFileSync(
+            `../data/dynamoData.csv`,
+            Papa.unparse( { fields: [ ...headers ], unMarshalledArray} ),
+            'utf8');
         }
       }
       else {
@@ -72,12 +73,4 @@ var scanDynamoDB = function ( query ) {
   
 }
 
-var updateLocalCache = function(data) {
-    fs.writeFileSync(
-        `../data/dynamoData.csv`,
-        Papa.unparse( { fields: [ ...headers ], data} ),
-        'utf8');
-}
-
 scanDynamoDB(query);
-updateLocalCache(unMarshalledArray);
