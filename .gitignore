@@ -62,6 +62,3 @@ build
 
 # cloudformation generated template
 packaged-template.yml
-
-# package-lock
-package-lock.json
