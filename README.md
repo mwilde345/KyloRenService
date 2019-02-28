@@ -62,6 +62,8 @@ https://stackoverflow.com/questions/41273152/any-way-i-can-get-python-sounds-to-
  * use shelljs: https://stackoverflow.com/questions/44647778/how-to-run-shell-script-file-using-nodejs
  * that way we can run the script to do npm link iff package.json was updated which we can check for in conditional-install script.
 
+ testing quick update
+
 
 show chris @vetco the project. via our email thread.
 
