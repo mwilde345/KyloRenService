@@ -5,7 +5,8 @@
   "main": "src/js/index.js",
   "bin": {
     "runconfig": "./cmd/runConfig.js",
-    "conditional-install": "./cmd/conditionalInstall.js"
+    "conditional-install": "./cmd/conditionalInstall.js",
+    "dynamo-sync": "./cmd/dynamoSync.js"
   },
   "devDependencies": {
     "jshint": "^2.9.6"

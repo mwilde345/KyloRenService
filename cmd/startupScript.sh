@@ -10,6 +10,7 @@ cd /home/pi/Documents/Dev/KyloRenService
 sudo service amazon-ssm-agent start
 #start iot listener
 git pull
+#have npm link run conditionally as well...
 npm link
 conditional-install
-node dynamoSync
+dynamo-sync

@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // consider having the command run to git commit the changes to the local file every time a dynamo update is made.
 // like a backup in the repo.
 var AWS = require('aws-sdk');
