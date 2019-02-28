@@ -27,7 +27,7 @@ var scanDynamoDB = function ( query ) {
         }
         else {
           fs.writeFileSync(
-            '../data/dynamoData.csv',
+            __dirname + '../data/dynamoData.csv',
             Papa.unparse( { fields: [ ...headers ], data: unMarshalledArray } ),
             'utf8');
         }

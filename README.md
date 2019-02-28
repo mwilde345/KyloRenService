@@ -57,7 +57,8 @@ https://stackoverflow.com/questions/41273152/any-way-i-can-get-python-sounds-to-
 * need 74AHCT125 or 74HCT125N converters and mini breadboard
 * wiring with the level shifting chip: https://learn.adafruit.com/neopixels-on-raspberry-pi/raspberry-pi-wiring
 * got afp on pi. now on mac do open afp:raspberrypi.local to mount remote fs
+* startup script: https://raspberrypi.stackexchange.com/questions/8734/execute-script-on-start-up
+
 
 show chris @vetco the project. via our email thread.
 
-TESTING CODEPIPELINE RUNCOMMAND TRIGGER, again, again, again
