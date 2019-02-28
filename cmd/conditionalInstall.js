@@ -1,7 +1,5 @@
-const simpleGit = require('simple-git')
+#!/usr/bin/env node
 
-function main(){
-        
-}
+let installChanged = require('install-changed')
 
-main();
+installChanged.watchPackage()

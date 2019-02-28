@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "2.2",
+  "description": "Update code on the pi using git pull",
+  "mainSteps": [
+    {
+      "action": "aws:runShellScript",
+      "name": "KRSUpdatePi",
+      "inputs": {
+        "runCommand": [
+          "cd /home/pi/Documents/Dev/KyloRenService",
+          "git reset --hard origin/master",
+          "git pull",
+          "npm link",
+          "conditional-install"
+        ]
+      }
+    }
+  ]
+}

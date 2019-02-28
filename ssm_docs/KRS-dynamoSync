@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "2.2",
+  "description": "Update code on the pi using git pull",
+  "mainSteps": [
+    {
+      "action": "aws:runShellScript",
+      "name": "KRSDynamoSync",
+      "inputs": {
+        "runCommand": [
+          "cd /home/pi/Documents/Dev/KyloRenService/cmd",
+          "node dynamoSync"
+        ]
+      }
+    }
+  ]
+}
