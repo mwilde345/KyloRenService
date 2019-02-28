@@ -27,7 +27,7 @@ var scanDynamoDB = function ( query ) {
         }
         else {
           fs.writeFileSync(
-            path.join(__dirname, '..', 'data/dynamoData.csv'),
+            '/home/pi/Documents/Dev/KyloRenService/data/dynamoData.csv',
             Papa.unparse( { fields: [ ...headers ], data: unMarshalledArray } ),
             'utf8');
         }
