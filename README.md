@@ -59,6 +59,8 @@ https://stackoverflow.com/questions/41273152/any-way-i-can-get-python-sounds-to-
 * got afp on pi. now on mac do open afp:raspberrypi.local to mount remote fs
 * startup script: https://raspberrypi.stackexchange.com/questions/8734/execute-script-on-start-up
  * went with the superscript option
+ * use shelljs: https://stackoverflow.com/questions/44647778/how-to-run-shell-script-file-using-nodejs
+ * that way we can run the script to do npm link iff package.json was updated which we can check for in conditional-install script.
 
 
 show chris @vetco the project. via our email thread.
