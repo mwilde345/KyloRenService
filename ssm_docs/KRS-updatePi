@@ -10,7 +10,6 @@
           "cd /home/pi/Documents/Dev/KyloRenService",
           "git reset --hard origin/master",
           "git pull",
-          "npm link",
           "conditional-install"
         ]
       }
