@@ -7,10 +7,7 @@
       "name": "KRSUpdatePi",
       "inputs": {
         "runCommand": [
-          "cd /home/pi/Documents/Dev/KyloRenService",
-          "git reset --hard origin/master",
-          "git pull",
-          "conditional-install"
+          "/home/pi/Documents/Dev/KyloRenService/cmd/startupScript.sh"
         ]
       }
     }
