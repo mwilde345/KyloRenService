@@ -1,8 +1,10 @@
 #!/usr/bin/env node
+// this is doing the check from root directory. says /root/package.json modified
 
 let installChanged = require('install-changed')
-let shelljs = require('shelljs');
-
+let shell = require('shelljs');
+console.log('checking package.json');
 if (installChanged.watchPackage()) {
-    shelljs.exec('/home/pi/Documents/Dev/KyloRenService/cmd/npmLink.sh');
+    console.log('running npm link');
+    shell.exec(__dirname + 'npmLink.sh');
 }
