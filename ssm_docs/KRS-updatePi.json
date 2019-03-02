@@ -7,7 +7,7 @@
       "name": "KRSUpdatePi",
       "inputs": {
         "runCommand": [
-          "/home/pi/Documents/Dev/KyloRenService/cmd/startupScript.sh"
+          "/home/pi/Documents/Dev/KyloRenService/cmd/syncScript.sh"
         ]
       }
     }
