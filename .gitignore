@@ -62,3 +62,6 @@ build
 
 # cloudformation generated template
 packaged-template.yml
+
+# ignore packagehash.txt used by install-changed npm package
+packagehash.txt
