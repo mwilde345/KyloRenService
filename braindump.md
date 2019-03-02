@@ -134,13 +134,3 @@ On Startup:
 Issues:
 * doing npm install on the pi: https://github.com/nodejs/node-gyp/issues/454 gives permission errors w/ node-gyp
 * 
-
-
-[default]
-aws_access_key_id = AKIAJD5ICU25MVXEJV2Q
-aws_secret_access_key = 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
-region = us-east-2
-[mwilde_ro]
-aws_access_key_id = AKIAJNZZMRQ5RB6ESQBQ
-aws_secret_access_key = 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
-region = us-east-2
