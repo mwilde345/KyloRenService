@@ -123,6 +123,7 @@ to include in master template:
     * IAM role for the pi to read dynamo
     * set the profile env variable: https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/loading-node-credentials-shared.html
     * so doing sudo node cmd/dynamoSync fails because there was no .aws/credentials file in the /root dir. so i made it and it works.
+    * so root creates the dynamoData.csv file, so the pi user can't edit it. To fix, do umask 002 so default file perms are 664. and umask 003 for directories to be 774
 
 On Startup:
 * sudo service amazon-ssm-agent start

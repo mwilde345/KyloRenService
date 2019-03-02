@@ -32,7 +32,7 @@ var scanDynamoDB = function ( query ) {
         else {
           fs.writeFileSync(
             path.join(__dirname, '..', 'data/dynamoData.csv'),
-            Papa.unparse( { fields: [ ...headers ], data: unMarshalledArray } ),
+            Papa.unparse( { fields: [ ...headers ], data: unMarshalledArray } ) + '\n',
             'utf8');
         }
       }
