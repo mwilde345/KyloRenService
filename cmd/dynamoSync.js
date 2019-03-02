@@ -11,7 +11,9 @@ var unMarshalledArray = [];
 const fs = require('fs');
 AWS.config.credentials = new AWS.SharedIniFileCredentials({profile: 'mwilde_ro'});
 AWS.config.region = 'us-east-2';
-  
+// every time this is run, it may or may not update the dynamoData.csv file. If we
+// want this file in source control, we have to do a check if the data changed and if
+// so make a commit and pull request. put csv file in gitignore for now.
 var dynamoDB = new AWS.DynamoDB();
   
 var query = {

@@ -65,3 +65,6 @@ packaged-template.yml
 
 # ignore packagehash.txt used by install-changed npm package
 packagehash.txt
+
+# dynamoData.csv may or may not change when running dynamoSync.
+dynamoData.csv

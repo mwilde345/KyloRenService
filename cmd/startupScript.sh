@@ -12,6 +12,7 @@ cd /home/pi/Documents/Dev/KyloRenService
 #start iot listener
 git stash
 git checkout master
+git reset --hard origin/master
 git pull
 conditional-install
 dynamo-sync
