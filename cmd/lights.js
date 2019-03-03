@@ -34,26 +34,31 @@ async function main(config) {
 }
 
 async function expand(color) {
-  var iteration = 0;
-  while(iteration < NUM_ITERATIONS){
-    return await new Promise(resolve => 
-      setTimeout(function () {
+  var iteration = -1;
+  return await new Promise(resolve => {
+    //while(iteration < NUM_ITERATIONS){
+    var interval = setInterval(function () {
+        console.log(iteration);
+        console.log(a_left.concat(a_right, a_middle));
+        if (++iteration >= NUM_ITERATIONS) {
+          clearInterval(interval);
+          resolve();
+        }
         if(iteration < 20) {
           //expand middle
           a_middle[iteration] = color;
-          ws281x.render(a_left);
+          ws281x.render(
+            Uint32Array.from(a_left.concat(a_right, a_middle))
+          );
         }else {
           //expand sides
           a_left[iteration%4] = a_right[iteration%4] = color;
         }
-        iteration++;
         ws281x.render(
           Uint32Array.from(a_left.concat(a_right, a_middle))
         )
-        resolve();
-      }, 80)
-    );
-  }
+      }, 10)
+  });
 }
 
 function wait(ms) {
