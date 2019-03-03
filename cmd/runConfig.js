@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 const async = require('async');
-const sounds = require('./sounds');
-const lights = require('./lights');
+const sounds = require(__dirname + '/sounds');
+const lights = require(__dirname + '/lights');
 // stop all current runConfig processes
 //read from playedCache (not in the repo)
 //read from configs
@@ -13,11 +13,11 @@ const lights = require('./lights');
 //playLed
 //updatePlayedCache
 
-function runConfig() {
+async function runConfig() {
     console.log('running');
     stopCurrentJobs();
     let playedCacheIds = loadPlayedCache() || [];
-    let configs = loadConfigs() || [{configId: null}];
+    let configs = loadConfigs() || [{configId: null, color: '0x3076D1', soundlength: 3000}];
     let counter = 0;
     let selected = configs[counter];
     while(playedCacheIds.includes(selected.configId)) {
@@ -29,9 +29,15 @@ function runConfig() {
         selected = configs[0];
     }
     playSound(selected);
-    playLed(selected);
+    await playLed(selected);
+    // wait for expanding, waiting, and contracting
+    //await wait(selected.soundlength);
     updatePlayedCache(selected.configId, playedCacheIds);
-    console.log('ran');
+    console.log('done in runconfig');
+}
+
+function wait(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 function stopCurrentJobs() {
@@ -51,11 +57,11 @@ function loadConfigs() {
 }
 
 async function playSound(selected) {
-    sounds.main(selected);
+    await sounds.main(selected);
 }
 
 async function playLed(selected) {
-    lights.main(selected);
+    await lights.main(selected);
 }
 
 function updatePlayedCache(selectedId, playedCacheIds) {
