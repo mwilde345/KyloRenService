@@ -17,7 +17,7 @@ async function runConfig() {
     console.log('running');
     stopCurrentJobs();
     let playedCacheIds = loadPlayedCache() || [];
-    let configs = loadConfigs() || [{configId: null, color: '0x3076D1', soundlength: 3000}];
+    let configs = loadConfigs() || [{configId: null, color: '0xef0000', soundlength: 3000}];
     let counter = 0;
     let selected = configs[counter];
     while(playedCacheIds.includes(selected.configId)) {
@@ -56,8 +56,8 @@ function loadConfigs() {
 
 }
 
-async function playSound(selected) {
-    await sounds.main(selected);
+function playSound(selected) {
+    sounds.main(selected);
 }
 
 async function playLed(selected) {

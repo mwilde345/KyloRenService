@@ -142,3 +142,8 @@ TODO:
  * setup logging for js files with winston or something
  * setup logging for script files
 * script to copy aws credentials file from pi home dir to /root user directory.
+
+Sounds:
+* Pygame is quiet
+* use omxplayer wrapper. install: https://github.com/willprice/python-omxplayer-wrapper/issues/115
+* you can do async sounds
