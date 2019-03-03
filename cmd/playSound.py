@@ -11,7 +11,6 @@ player = OMXPlayer(SOUND_PATH)
 sleep(3)
 
 player.quit()
-player2.quit()
 
 print('done')
 sys.stdout.flush()

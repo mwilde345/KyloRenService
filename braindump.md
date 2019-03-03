@@ -147,3 +147,4 @@ Sounds:
 * Pygame is quiet
 * use omxplayer wrapper. install: https://github.com/willprice/python-omxplayer-wrapper/issues/115
 * you can do async sounds
+* weird stuff when doing audio same time as lights. fuzz from audio. no lights. did this: https://www.raspberrypi.org/forums/viewtopic.php?f=29&t=136445 then got some lights but still fuzz audio.
