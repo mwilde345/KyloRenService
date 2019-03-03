@@ -38,8 +38,6 @@ async function expand(color) {
   return await new Promise(resolve => {
     //while(iteration < NUM_ITERATIONS){
     var interval = setInterval(function () {
-        console.log(iteration);
-        console.log(a_left.concat(a_right, a_middle));
         if (++iteration >= NUM_ITERATIONS) {
           clearInterval(interval);
           resolve();
@@ -52,7 +50,8 @@ async function expand(color) {
           );
         }else {
           //expand sides
-          a_left[iteration%4] = a_right[iteration%4] = color;
+          a_left[iteration%4] = color;
+          a_right[3 - iteration%4] = color;
         }
         ws281x.render(
           Uint32Array.from(a_left.concat(a_right, a_middle))
