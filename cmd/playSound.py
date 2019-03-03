@@ -8,8 +8,6 @@ import sys
 SOUND_PATH = Path(sys.argv[1])
 
 player = OMXPlayer(SOUND_PATH)
-sleep(1)
-player2 = OMXPlayer(SOUND_PATH)
 sleep(3)
 
 player.quit()
