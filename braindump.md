@@ -135,3 +135,10 @@ On Startup:
 Issues:
 * doing npm install on the pi: https://github.com/nodejs/node-gyp/issues/454 gives permission errors w/ node-gyp
 * 
+
+TODO:
+* logging
+ * for all the files: dynamoSync, iot_listener, lights, sounds, runConfig, conditionalInstall, syncScript
+ * setup logging for js files with winston or something
+ * setup logging for script files
+* script to copy aws credentials file from pi home dir to /root user directory.
