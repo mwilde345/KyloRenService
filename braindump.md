@@ -148,3 +148,16 @@ Sounds:
 * use omxplayer wrapper. install: https://github.com/willprice/python-omxplayer-wrapper/issues/115
 * you can do async sounds
 * weird stuff when doing audio same time as lights. fuzz from audio. no lights. did this: https://www.raspberrypi.org/forums/viewtopic.php?f=29&t=136445 then got some lights but still fuzz audio.
+* https://www.raspberrypi.org/forums/viewtopic.php?f=57&t=234929 is my topic for audio issues.
+* it's a PWM issue. visit those links in there to see solutions.
+* the lib talks about it: https://github.com/jgarff/rpi_ws281x
+* force hdmi audio config.txt: 
+ * hdmi_force_hotplug=1
+ * hdmi_force_edid_audio=1
+* setting up bluetooth audio: https://www.raspberrypi.org/forums/viewtopic.php?t=68779
+* https://raspberrypi.stackexchange.com/questions/53408/automatically-connect-trusted-bluetooth-speaker
+ * within the given answer I turned off the analog audio. 
+* got it connected to bluetooth speaker, now how to set as audio source? second best answer in the above post: https://github.com/BaReinhard/a2dp_bluetooth
+* i went with the second one. just commented out the bashrc stuff from the first.
+* another thing? idk: https://gist.github.com/mill1000/74c7473ee3b4a5b13f6325e9994ff84c
+

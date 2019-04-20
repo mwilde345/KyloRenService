@@ -28,7 +28,7 @@ async function runConfig() {
         resetPlayedCache();
         selected = configs[0];
     }
-    playSound(selected);
+    await playSound(selected);
     await playLed(selected);
     // wait for expanding, waiting, and contracting
     //await wait(selected.soundlength);
